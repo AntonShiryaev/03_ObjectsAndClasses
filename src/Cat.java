@@ -36,11 +36,6 @@ public class Cat
     {
         return weight;
     }
-    //добавление проверки getminWeight()
-    public Double getminWeight()
-    {
-        return minWeight;
-    }
 
     public String getStatus()
     {
