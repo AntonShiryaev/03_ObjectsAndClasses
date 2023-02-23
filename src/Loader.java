@@ -29,8 +29,13 @@ public class Loader
         System.out.println(vasya.getStatus());
 
         //4.Замяукать
-        for(double i = shurka.getWeight(); i>1000; i--)
+
+        /*for(double i = shurka.getWeight(); i>1000; i--)
         {
+            shurka.meow();
+        }*/
+
+        while(shurka.getWeight()>1000){
             shurka.meow();
         }
         System.out.println("Shurka current status: "+shurka.getStatus());
