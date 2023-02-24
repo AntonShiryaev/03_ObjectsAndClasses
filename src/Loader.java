@@ -41,7 +41,9 @@ public class Loader
         System.out.println("Shurka current status: "+shurka.getStatus());
         System.out.println("Shurka current weight: "+shurka.getWeight());
 
-
+        //3.4 Проверка выполнения условий
+        System.out.println("Cat.count: "+Cat.count);
+        System.out.println("Cat.getCount(): "+Cat.getCount());
 
         /*Computer myNotebook = new Computer();
         myNotebook.processor = new Processor();
