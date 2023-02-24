@@ -48,30 +48,46 @@ public class Cat
         this.weight=weight;
         this.originWeight=weight;
     }
+    //геттер
     public String getName(){
         return name;
     }
 
-
-
+    //3.7 геттеры и сеттеры. выше геттер. ниже сеттер
+    public void setName(String name){
+        this.name=name;
+    }
 
     //3.5
     public void setTransportType(TransportType type){}
 
     public void meow()
     {
+        if(weight>=minWeight && weight<=maxWeight){
         weight = weight - 1;
-        System.out.println("Meow");
+        System.out.println("Meow");}
+        else{
+            System.out.println("Тишина, вес кошки: "+weight);
+        }
     }
 
     public void feed(Double amount)
     {
-        weight = weight + amount;
+        if(weight>=minWeight && weight<=maxWeight){
+        weight = weight + amount;}
+        else{
+            System.out.println("Накормить невозможно, вес кошки: "+weight);
+        }
     }
 
+    //Урок 3. Допзадание запрета
     public void drink(Double amount)
     {
-        weight = weight + amount;
+        if(weight>=minWeight && weight<=maxWeight){
+        weight = weight + amount;}
+        else{
+            System.out.println("Напоить невозможно, вес кошки: "+weight);
+        }
     }
 
     public Double getWeight()
