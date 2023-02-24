@@ -45,8 +45,13 @@ public class Loader
         System.out.println("Cat.count: "+Cat.count);
         System.out.println("Cat.getCount(): "+Cat.getCount());
 
+        //3.5
+        murka.setTransportType(TransportType.CARGO_CAR);
 
-
+        //3.5 проверка констант
+        System.out.println("Всего глаз у кошки:"+Cat.CAT_EYES);
+        System.out.println("Минимальный вес у кошки: "+Cat.CAT_MIN_WEIGHT);
+        System.out.println("Максимальный вес у кошки: "+Cat.CAT_MAX_WEIGHT);
 
         /*Computer myNotebook = new Computer();
         myNotebook.processor = new Processor();

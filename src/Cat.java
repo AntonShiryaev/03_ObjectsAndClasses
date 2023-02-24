@@ -13,6 +13,14 @@ public class Cat
     public static int getCount(){
         return count;
     }
+
+    //3.5 создать константы
+    public static final int CAT_EYES = 2;
+    public static final double CAT_MIN_WEIGHT = 1000.0;
+    public static final double CAT_MAX_WEIGHT = 9000.0;
+    //3.5 enum добавить окрасы
+    public void setOkrasType(OkrasType type){}
+
     public Cat()
     {
         weight = 1500.0 + 3000.0 * Math.random();
@@ -21,6 +29,9 @@ public class Cat
         maxWeight = 9000.0;
         count++;
     }
+
+    //3.5
+    public void setTransportType(TransportType type){}
 
     public void meow()
     {
