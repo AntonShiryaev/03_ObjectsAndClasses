@@ -3,10 +3,11 @@ public class Loader
 {
     public static void main(String[] args) {
         //создание объектов, 5-7
-        Cat murka = new Cat();
-        Cat vasya = new Cat();
+        //3.6 проверка конструктора с вводом имени и веса
+        Cat murka = new Cat("Мурка",2000);
+        Cat vasya = new Cat("Вася");
         Cat shurka = new Cat();
-        Cat firka = new Cat();
+        Cat firka = new Cat(5000); //3.6 создание кошки через вес
         Cat tirka = new Cat();
 
         //1.вывести вес
@@ -52,6 +53,14 @@ public class Loader
         System.out.println("Всего глаз у кошки:"+Cat.CAT_EYES);
         System.out.println("Минимальный вес у кошки: "+Cat.CAT_MIN_WEIGHT);
         System.out.println("Максимальный вес у кошки: "+Cat.CAT_MAX_WEIGHT);
+
+        //3.6 создание константы имени
+        System.out.println(murka.getName());
+        System.out.println(murka.getWeight());
+
+        //3.6 проверка конструктора веса кошки
+        System.out.println("Вес Мурки: "+murka.getWeight());
+        System.out.println("Вес Фирки: "+firka.getWeight());
 
         /*Computer myNotebook = new Computer();
         myNotebook.processor = new Processor();

@@ -30,6 +30,31 @@ public class Cat
         count++;
     }
 
+    //3.6 создание конструктора имени
+    private String name;
+    public Cat(String name){
+        this(); //для одновременного вызова других одноименных конструкторов для создания в них нужных переменных
+        this.name=name;
+    }
+    public Cat(int weight){
+        this();
+        this.weight=weight;
+        this.originWeight=weight;
+    }
+    //3.6 конструктор с строкой имени и веса
+    public Cat(String name, int weight){
+        this();
+        this.name=name;
+        this.weight=weight;
+        this.originWeight=weight;
+    }
+    public String getName(){
+        return name;
+    }
+
+
+
+
     //3.5
     public void setTransportType(TransportType type){}
 
