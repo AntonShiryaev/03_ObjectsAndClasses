@@ -45,6 +45,9 @@ public class Loader
         System.out.println("Cat.count: "+Cat.count);
         System.out.println("Cat.getCount(): "+Cat.getCount());
 
+
+
+
         /*Computer myNotebook = new Computer();
         myNotebook.processor = new Processor();
         //изменение переменных в объектах
