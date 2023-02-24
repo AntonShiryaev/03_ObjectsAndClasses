@@ -4,10 +4,10 @@ public class Loader
     public static void main(String[] args) {
         //создание объектов, 5-7
         //3.6 проверка конструктора с вводом имени и веса
-        Cat murka = new Cat("Мурка",2000);
+        Cat murka = new Cat("Мурка",2000.);
         Cat vasya = new Cat("Вася");
         Cat shurka = new Cat();
-        Cat firka = new Cat(5000); //3.6 создание кошки через вес
+        Cat firka = new Cat(5000.); //3.6 создание кошки через вес
         Cat tirka = new Cat();
 
         //1.вывести вес
@@ -36,7 +36,7 @@ public class Loader
             shurka.meow();
         }*/
 
-        while(shurka.getWeight()>1000){
+        while(shurka.getWeight()>1000.){
             shurka.meow();
         }
         System.out.println("Shurka current status: "+shurka.getStatus());
@@ -75,5 +75,15 @@ public class Loader
 
         /*Cat cat = new Cat();
         System.out.println(cat.getStatus());*/
+
+        //3.5.Задание создания перегруженного конструктора
+        Cat cat1 = Loader.getKitten(1100.);
+        Cat cat2 = Loader.getKitten(1100.);
+        Cat cat3 = Loader.getKitten(1100.);
+        System.out.println(cat1.getWeight()+cat2.getWeight()+cat3.getWeight());
     }
+    private static Cat getKitten(double weight){
+        return new Cat(weight);
+    }
+
 }

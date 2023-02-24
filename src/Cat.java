@@ -36,13 +36,13 @@ public class Cat
         this(); //для одновременного вызова других одноименных конструкторов для создания в них нужных переменных
         this.name=name;
     }
-    public Cat(int weight){
+    public Cat(double weight){
         this();
         this.weight=weight;
         this.originWeight=weight;
     }
     //3.6 конструктор с строкой имени и веса
-    public Cat(String name, int weight){
+    public Cat(String name, double weight){
         this();
         this.name=name;
         this.weight=weight;
